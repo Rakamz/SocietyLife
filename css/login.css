@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #354152;
+  color: #7e8ba3;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 100%;
+}
+
+.align {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.align__item--start {
+  align-self: flex-start;
+}
+
+.align__item--end {
+  align-self: flex-end;
+}
+
+.site__logo {
+  margin-bottom: 2rem;
+}
+
+input::placeholder {
+  color: #7e8ba3;
+}
+
+.form__field {
+  padding: 10px;
+}
+
+.grid {
+  margin: 0 auto;
+  max-width: 25rem;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: 100;
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+a {
+  color: #7e8ba3;
+}
+
+.register {
+  box-shadow: 0 0 250px #000;
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+input {
+  padding: 6px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  color: azure;
+  transition: background-color 0.3s; /* Transisi warna latar belakang */
+}
+
+/* Menentukan efek saat input mendapatkan fokus */
+input:focus {
+  background-color: #fff; /* Mengubah warna latar belakang saat input mendapatkan fokus */
+  color: #354152; /* Mengubah warna teks saat input mendapatkan fokus */
+}
+input[type="submit"] {
+  background-color: #378f7b;
+  color: #fff;
+  width: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, border 0.3s; /* Menambahkan transisi untuk transformasi, bayangan kotak, dan border */
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan untuk efek 3D */
+}
+
+/* Menentukan efek saat tombol submit diklik */
+input[type="submit"]:active {
+  transform: translateY(2px); /* Menggeser tombol ke bawah saat diklik */
+  box-shadow: none; /* Menghapus bayangan saat tombol diklik */
+}
+
+/* Menambahkan border pada tombol ketika diberikan hover */
+input[type="submit"]:hover {
+  border: 2px solid #fff; /* Menambahkan border putih ketika tombol dihover */
+}
+
+img {
+  width: 200px;
+}
